@@ -1,0 +1,110 @@
+
+/* RESET STYLES */ 
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none; 
+}
+
+ul {
+    list-style: none;
+}
+
+
+button {
+    cursor: pointer;
+    padding: 8px 16px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    font-weight: 550;
+}
+
+button:hover {
+    background-color: #fff;
+}
+
+/* Content Styling */
+
+.parent-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+    margin: 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border: 2px solid grey;
+    border-radius: 8px;
+}
+
+
+/* <div class="overlay"></div>
+    <div class="modal">
+        <label for="userInput">Enter a number</label>
+        <input 
+            name="userInput" 
+            id="userInput" 
+            type="number" 
+            max="100" 
+            placeholder="enter here">
+        <button id="submit">Generate</button>
+    </div> */
+
+.overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: grey;
+    opacity: 50%;
+}
+
+.modal {
+    position: fixed;
+    top: 25%;
+    right: 25%;
+    width: 50%;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    background-color: #ddd;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 32px 16px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.modal p {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modal input {
+    padding: 8px 16px;
+    border: 2px solid grey;
+    border-radius: 8px;
+}
+
+
+
+
+
+

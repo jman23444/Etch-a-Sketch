@@ -32,7 +32,8 @@ button {
 }
 
 button:hover {
-    background-color: #fff;
+    background-color: green;
+    color: #fff;
 }
 
 .control-buttons {
@@ -131,6 +132,12 @@ button:hover {
 .gridDiv:hover {
     background-color: grey;
     transition: background-color 0.3s;
+}
+
+
+.active {
+    background-color: green;
+    color: #fff;
 }
 
 

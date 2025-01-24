@@ -49,19 +49,6 @@ button:hover {
     border-radius: 8px;
 }
 
-
-/* <div class="overlay"></div>
-    <div class="modal">
-        <label for="userInput">Enter a number</label>
-        <input 
-            name="userInput" 
-            id="userInput" 
-            type="number" 
-            max="100" 
-            placeholder="enter here">
-        <button id="submit">Generate</button>
-    </div> */
-
 .overlay {
     display: none;
     width: 100%;
@@ -95,6 +82,7 @@ button:hover {
     position: absolute;
     top: 10px;
     right: 10px;
+    cursor: pointer;
 }
 
 .modal input {

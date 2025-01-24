@@ -60,6 +60,8 @@ button:hover {
     opacity: 50%;
 }
 
+/* MODAL & OVERLAY STYLING */
+
 .modal {
     position: fixed;
     top: 25%;
@@ -91,8 +93,22 @@ button:hover {
     border-radius: 8px;
 }
 
+.grid-container {
+    display: none;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    margin: auto;
+    outline: 2px solid black;
+}
 
+.grid-container .gridDiv {
+    width: 32px;
+    height: 32px;
+    border: 1px solid grey;
+}
 
-
-
-
+.gridDiv:hover {
+    background-color: grey;
+    transition: background-color 0.3s;
+}

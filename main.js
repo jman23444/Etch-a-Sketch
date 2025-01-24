@@ -19,20 +19,24 @@ function generateGrid(userNumber) {
     // Reset the grid by removing old one 
     gridContainer.style.display = 'flex';
     gridContainer.replaceChildren();
-    //
-    gridContainer.style.display = 'flex';
-    gridContainer.style.display = 'wrap';
-    gridContainer.style.display = '960px';
-    gridContainer.style.display = '960px';
     // 
     for (let i = 0; i < userNumber; i++) {
         //
-        for (let j = 0; j <= userNumber; j++) {
+        const gridRow = document.createElement('div');
+        gridRow.classList.add('grid-row');
+        // inner loop 
+        for (let j = 0; j < userNumber; j++) {
             const gridDiv = document.createElement('div');
-            gridDiv.setAttribute('class', 'gridDiv');
-            // appending to grid container
-            gridContainer.appendChild(gridDiv);
+            gridDiv.classList.add('gridDiv');
+            // Adding hover effect 
+            gridDiv.addEventListener('mouseover', () => {
+                gridDiv.style.backgroundColor = 'grey';
+            });
+            // Appending to gridRow 
+            gridRow.appendChild(gridDiv);
         }
+        // appending gridRow to grid-container
+        gridContainer.appendChild(gridRow);
     }
     // Close modal and overlay
     overlay.style.display = 'none';

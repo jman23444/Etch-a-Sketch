@@ -11,6 +11,7 @@ html, body {
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
     background-color: #fff;
+    background-color: orange;
 }
 
 a {
@@ -34,6 +35,16 @@ button:hover {
     background-color: #fff;
 }
 
+.control-buttons {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 960px;
+    gap: 16px;
+}
+
 /* Content Styling */
 
 .parent-container {
@@ -41,12 +52,14 @@ button:hover {
     flex-direction: column;
     background-color: #ddd;
     margin: 32px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 16px;
     padding: 16px;
     border: 2px solid grey;
     border-radius: 8px;
+    min-height: 500px;
+
 }
 
 .overlay {
@@ -94,17 +107,24 @@ button:hover {
 }
 
 .grid-container {
-    display: none;
+    display: flex;
     flex-wrap: wrap;
-    width: auto;
-    height: auto;
+    width: 960px;
+    height: 960px;
     margin: auto;
-    outline: 2px solid black;
+    outline: 8px solid grey;
+    border-radius: 8px;
 }
 
-.grid-container .gridDiv {
-    width: 32px;
-    height: 32px;
+.grid-row {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.gridDiv {
+    height: auto;
+    flex: 1 0 auto;
     border: 1px solid grey;
 }
 
@@ -112,3 +132,5 @@ button:hover {
     background-color: grey;
     transition: background-color 0.3s;
 }
+
+
